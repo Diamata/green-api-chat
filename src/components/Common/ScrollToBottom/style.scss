@@ -1,0 +1,30 @@
+@import "../../../scss/variables.scss";
+
+.scroll {
+  position: fixed;
+  height: 42px;
+  width: 42px;
+  bottom: 80px;
+  right: 9px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $app-list;
+  border-radius: 100%;
+  color: $mid-gray;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 0 1px 1px 0 rgba(1, 1, 1, .6), 0 2px 5px 0 rgba(1, 1, 1, .2);
+
+  transform: scale(0);
+  opacity: 0;
+  transition: all linear .3s;
+
+  &.active {
+    transform: scale(1);
+    opacity: 1;
+    transition: all linear .5s;
+  }
+}

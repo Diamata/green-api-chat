@@ -1,0 +1,97 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.message {
+  padding: 6px 7px 8px 9px;
+  position: relative;
+  font-size: 14px;
+  color: $app-icons;
+
+  &.sent {
+    background: $chat-bubble;
+    border-radius: 9px 0 9px 9px;
+    margin-left: auto;
+    width: fit-content;
+    max-width: 60%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid transparent;;
+      border-left: 5px solid $chat-bubble;
+      border-top: 7px solid $chat-bubble;
+    }
+
+    .message_text {
+      @include message-text;
+    }
+
+    .message__time {
+      @include time;
+
+      .message__check {
+        width: 16px;
+        height: 11px;
+        margin: 5px 0 4px 4px;
+        font-size: 14px;
+        text-align: end;
+
+        &.read {
+          color: $icon-ack;
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 90%;
+    }
+  }
+
+  &.received {
+    background: $app-list;
+    border-radius: 0 9px 9px 9px;
+    width: fit-content;
+    max-width: 60%;
+    margin-right: auto;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 7px solid $app-list;
+      border-right: 5px solid $app-list;
+    }
+
+    .message_text {
+      @include message-text;
+
+      .message__gap {
+        &:after {
+          width: 35px;
+        }
+      }
+    }
+
+    .message__time {
+      @include time;
+    }
+
+    @media screen and (max-width: 992px) {
+      max-width: 80%;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 90%;
+    }
+  }
+}

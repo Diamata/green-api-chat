@@ -1,0 +1,12 @@
+@import "../../../scss/variables.scss";
+
+.securetext {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: $mid-gray;
+
+  &__lock-icon {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../scss/variables.scss";
+
+button {
+  color: $app-icons;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  margin-left: 7px;
+}

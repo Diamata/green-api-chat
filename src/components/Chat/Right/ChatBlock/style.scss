@@ -1,0 +1,12 @@
+@import "../../../../scss/variables.scss";
+@import "../../../../scss/mixins.scss";
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 400px;
+  z-index: 99;
+
+  @include custom-scroll;
+}

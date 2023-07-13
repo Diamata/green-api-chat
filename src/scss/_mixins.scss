@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+@mixin custom-input {
+  border: none;
+  background: $app-interface-elems;
+  color: $app-icons;
+  padding: 6px 12px;
+  font-size: 14px;
+
+  &::placeholder {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &:active, &:focus, &:focus::placeholder {
+    border: none;
+    outline: none;
+  }
+}
+
+@mixin custom-scroll {
+  ::-webkit-scrollbar {
+    display: block;
+    width: 6px!important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 6px!important;
+    height: 2%;
+    background: rgba(1, 1, 1, .2);
+  }
+}
+
+@mixin time {
+  font-size: 11px;
+  color: $mid-gray;
+  margin-left: 5px;
+  position: absolute;
+  bottom: 2px;
+  right: 7px;
+  display: flex;
+  align-items: flex-end;
+}
+
+@mixin message-text {
+  position: relative;
+  word-wrap: break-word;
+  width: 100%;
+
+  .message__gap {
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 1px;
+      width: 55px;
+      background: transparent;
+    }
+  }
+
+  a {
+    color: $icon-ack;
+    text-decoration: underline;
+  }
+
+  .message__show-more {
+    color: $icon-ack;
+    cursor: pointer;
+    display: inline;
+
+    &.disabled {
+      display: none;
+    }
+  }
+}

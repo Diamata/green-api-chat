@@ -1,0 +1,95 @@
+.contact {
+  position: relative;
+  display: grid;
+  grid-template-columns: 49px 1fr 35px 21px;
+  grid-template-rows: 19.5px 19.5px;
+  row-gap: 10px;
+  background: none;
+  padding: 10px 16px;
+}
+.contact.active {
+  background: #eff2f5;
+}
+.contact__img {
+  overflow: hidden;
+  border-radius: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.contact__img img {
+  height: 100%;
+  object-fit: cover;
+}
+.contact__name {
+  font-size: 17px;
+  height: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px 0 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.contact__name.unread {
+  font-weight: bold;
+}
+.contact__date {
+  font-size: 12px;
+  justify-self: flex-start;
+  align-self: flex-end;
+  margin: 0 0 0 auto;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.contact__msg {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  padding-left: 10px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.contact__msg .contacts__check_wrapper {
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+}
+.contact__msg .contacts__check_wrapper .contacts__check {
+  font-size: 18px;
+  line-height: 1;
+  color: #a7aeb3;
+}
+.contact__msg .contacts__check_wrapper .contacts__check.read {
+  color: #53bdeb;
+}
+.contact__msg .contact__last-message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px 0 0;
+  font-size: 14px;
+  color: #54646f;
+}
+.contact__msg .contact__last-message.unread {
+  font-weight: bold;
+}
+.contact:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(85% - 5px);
+  margin-right: 5px;
+  background: #e4e9ea;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

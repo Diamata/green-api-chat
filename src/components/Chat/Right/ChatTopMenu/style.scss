@@ -1,0 +1,51 @@
+@import "../../../../scss/variables";
+
+.chat__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $app-interface-elems;
+  height: 59px;
+  padding: 10px 16px;
+
+  .chat__contact-info {
+    display: flex;
+    justify-content: flex-start;
+
+    .chat__contact-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+      }
+    }
+
+    .chat__contact-data {
+      display: flex;
+      flex-direction: column;
+
+      .chat__name {
+        font-size: 17px;
+        padding: 0 5px 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .chat__status {
+        font-size: 12px;
+        justify-self: start;
+        align-self: start;
+        padding: 0 5px 0 10px;
+      }
+    }
+  }
+
+  .chat_menu-buttons {
+    min-width: 100px;
+  }
+}

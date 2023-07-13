@@ -1,0 +1,16 @@
+@import "../../../../scss/variables";
+
+.chat__space {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+  background-color: $app-background;
+  background-image: url("../../../../assets/images/bgs/whatsappbg.png");
+  background-size: contain;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 12px 5%;
+  margin: 0;
+  position: relative;
+}

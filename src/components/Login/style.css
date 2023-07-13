@@ -1,0 +1,92 @@
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login h2 {
+  color: #54646f;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 500px;
+  text-align: center;
+}
+.login__form {
+  width: 500px;
+  height: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  background: #eff2f5;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(11, 20, 26, 0.05);
+}
+.login__form .login__inputs-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #54646f;
+}
+.login__form .login__inputs-label .login__input {
+  border: none;
+  background: #eff2f5;
+  color: #54646f;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #a7aeb3;
+  margin-top: 5px;
+  width: 300px;
+}
+.login__form .login__inputs-label .login__input::placeholder {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+.login__form .login__inputs-label .login__input:focus::placeholder {
+  color: transparent;
+}
+.login__form .login__inputs-label .login__input:active, .login__form .login__inputs-label .login__input:focus, .login__form .login__inputs-label .login__input:focus::placeholder {
+  border: none;
+  outline: none;
+}
+.login__form .login__inputs-label .login__input:active, .login__form .login__inputs-label .login__input:focus {
+  border: 1px solid #00a884;
+  background: #eff2f5;
+  box-shadow: inset 0 0 10px 1px rgba(1, 1, 1, 0.08);
+}
+.login__form .login__submit {
+  font-size: 16px;
+  padding: 10px 15px;
+  background: #00a884;
+  width: 20%;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #eff2f5;
+}
+.login__form .login__submit:active {
+  background: #0abd95;
+}
+.login__form .login__incorrect {
+  font-size: 12px;
+  color: orangered;
+}
+.login__tip {
+  color: #54646f;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.login__tip a {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

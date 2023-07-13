@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), url("../assets/fonts/Segoe UI.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: local("Ubuntu-Regular"), url("../assets/fonts/Ubuntu-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Cantarell-Regular";
+  src: local("Cantarell-Regular"), url("../assets/fonts/Cantarell-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "lucidagrande";
+  src: local("lucidagrande"), url("../assets/fonts/lucidagrande.ttf") format("ttf");
+}
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: local("FiraSans-Regular"), url("../assets/fonts/FiraSans-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: local("helveticamediumrusbyme"), url("../assets/fonts/helveticamediumrusbyme.otf") format("otf");
+}
+@font-face {
+  font-family: "helveticaneueltw1g_md";
+  src: local("helveticaneueltw1g_md"), url("../assets/fonts/helveticaneueltw1g_md.otf") format("otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", "Ubuntu-Regular", "Cantarell-Regular", "FiraSans-Regular", "lucidagrande", "helveticamediumrusbyme", "helveticaneueltw1g_md", "Arial", sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a, a:hover, a:focus, a:active {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=global.css.map */

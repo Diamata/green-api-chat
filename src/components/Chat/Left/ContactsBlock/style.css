@@ -1,0 +1,149 @@
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e4e9ea;
+  width: 100%;
+  min-width: 200px;
+  height: 100%;
+}
+.contacts-block__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eff2f5;
+  height: 59px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e4e9ea;
+}
+.contacts-block__menu .contacts-block__menu-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts-block__menu .contacts-block__menu-user .contacts-block__user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.contacts-block__menu .contacts-block__menu-user .contacts-block__user-pic img {
+  height: 100%;
+  object-fit: cover;
+}
+.contacts-block__menu .contacts-block__menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}
+.contacts-block__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid #e4e9ea;
+  position: relative;
+}
+.contacts-block__search .contacts-block__search-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background: #eff2f5;
+  height: 35px;
+  width: 90%;
+}
+.contacts-block__search .contacts-block__search-field .contacts-block__search-icon {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #54646f;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.contacts-block__search .contacts-block__search-field .contacts-block__search_input {
+  border: none;
+  background: #eff2f5;
+  color: #54646f;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.contacts-block__search .contacts-block__search-field .contacts-block__search_input::placeholder {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+.contacts-block__search .contacts-block__search-field .contacts-block__search_input:focus::placeholder {
+  color: transparent;
+}
+.contacts-block__search .contacts-block__search-field .contacts-block__search_input:active, .contacts-block__search .contacts-block__search-field .contacts-block__search_input:focus, .contacts-block__search .contacts-block__search-field .contacts-block__search_input:focus::placeholder {
+  border: none;
+  outline: none;
+}
+.contacts-block__search .contacts-block__search_filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 30px;
+  color: #a7aeb3;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.contacts-block__search .popup {
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  height: 130px;
+  width: 280px;
+  background: #eff2f5;
+  border-radius: 5px;
+  padding: 6px;
+  z-index: -10;
+  opacity: 0;
+  transition: all ease 0.55s;
+}
+.contacts-block__search .popup.active {
+  bottom: -130px;
+  z-index: 10;
+  opacity: 1;
+  transition: all ease-in-out 0.55s;
+}
+.contacts-block__search .popup__text {
+  color: #54646f;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.contacts-block__search .popup__button {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+.contacts-block__search .popup__button:hover {
+  color: #00a884;
+}
+.contacts-block__contact {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 0;
+}
+.contacts-block ::-webkit-scrollbar {
+  display: block;
+  width: 6px !important;
+}
+.contacts-block ::-webkit-scrollbar-thumb {
+  width: 6px !important;
+  height: 2%;
+  background: rgba(1, 1, 1, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */

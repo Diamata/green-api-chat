@@ -1,0 +1,11 @@
+.securetext {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #a7aeb3;
+}
+.securetext__lock-icon {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

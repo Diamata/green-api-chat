@@ -1,0 +1,31 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.chat__bottom {
+  display: flex;
+  align-items: center;
+  background: $app-interface-elems;
+  color: $app-icons;
+  height: 62px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+
+  .chat__clip-icon {
+    margin: 0 7px 0 -7px;
+  }
+
+  .chat__msg-input {
+    @include custom-input;
+
+    height: 101%;
+    width: 100%;
+    background: $app-list;
+    color: $app-icons;
+    border-radius: 5px;
+
+    &:focus::placeholder {
+      color: $app-icons;
+    }
+  }
+}

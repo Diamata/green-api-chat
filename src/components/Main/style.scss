@@ -1,0 +1,31 @@
+@import "../../scss/variables.scss";
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background: $app-background-deeper;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 55px;
+
+  &:before {
+    content: '';
+    height: 13.3%;
+    width: 100vw;
+    background: $app-background-stripe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 1440px) {
+    padding: 0;
+  }
+}

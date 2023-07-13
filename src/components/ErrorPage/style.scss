@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h2, p {
+    color: $app-icons;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+}
