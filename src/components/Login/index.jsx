@@ -80,12 +80,15 @@ const Login = () => {
                 value={apiTokenInstance}
             />
           </label>
+
+          <p className="login__highlighted">If you don't want to register in GREEN-API, visit <a href="https://github.com/Diamata/green-api-chat/blob/master/README.md" target="_blank" rel="noreferrer"><b>GitHub</b></a> to watch the video about this app</p>
+
           <button type="submit" className="login__submit">Log in</button>
 
           {!correctLogin && <p className="login__incorrect">Incorrect login or password</p>}
 
         </form>
-        <p className="login__tip">Visit and register in <a href="https://green-api.com/" target="_blank">GREEN-API</a> to get the IdInstance and apiTokenInstance</p>
+        <p className="login__tip">Visit and register in <a href="https://green-api.com/" target="_blank" rel="noreferrer">GREEN-API</a> to get the IdInstance and apiTokenInstance</p>
       </div>
   );
 };
