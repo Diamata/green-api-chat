@@ -1,3 +1,8 @@
+
+If you don't want to register in Green-api service, here is a video of how it works: 
+
+https://github.com/Diamata/green-api-chat/assets/103926548/5638e104-9671-4840-b837-53ba4d7c3224
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
